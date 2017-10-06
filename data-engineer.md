@@ -37,3 +37,8 @@ to :
 1. Send the generated file by email to tech-interview@chance.co
 
 
+# Choices
+First, I used BeautifulSoup to perform the news scraping. The articles are then cleaned, stopwords and punctuation are removed, and the text is tokenized to facilitate the search. Links and articles are stored in a Pandas dataframe saved on disk. 
+
+The second part open the dataframe file, and iterate over the rows to find the articles matching the given keyword. The program returns articles based on the word frequency within the articles. It returns the articles where the word appears the most as the input is a single keyword.
+
